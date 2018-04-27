@@ -13,6 +13,22 @@ Example data point looks like
     }
 ```
 
+## Pre-requisites
+The following need to be installed on your machine or VM:
+* NodeJS
+* NPM
+* Git
+* Docker
+* Docker-compose
+
+## Installation
+1. Start MySQL server: `docker-compose up -d`
+1. Source database shcema from the db-schema.sql file
+1. `cd api`
+1. Install dependencies: `npm install`
+1. Start the API server: `DEBUG=api:* npm start`
+
+
 ## Usage
 ### Get the last 500 data points
 `GET http://<ip>:3000/sensors`
